@@ -1,0 +1,15 @@
+<div class="flexContainer">
+    {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+    {{ $url := replace .Permalink .Site.BaseURL "" }}
+        {{ if ne $url "about/" }}
+        <div class="flexContainerItem" style="background-color: #BAD7F2">
+            <div class="flexContainerSub">
+                <li>
+                    <a href='{{ .Permalink }}'><aside class="dates">{{ .Date.Format "Jan 2" }}</aside></a>
+                    <a href='{{ .Permalink }}'>{{ .Title }} <h2>{{ .Description | markdownify }}</h2></a>
+                </li>
+            </div>
+        </div>
+        {{ end }}
+    {{ end }}
+</div>

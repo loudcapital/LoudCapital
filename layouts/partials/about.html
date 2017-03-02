@@ -1,0 +1,75 @@
+{{ "<!-- About Section -->" | safeHTML }}
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center bg-light-gray">
+        <h2 class="section-heading">{{ with .Site.Params.about.title }}{{ . | markdownify }}{{ end }}</h2>
+        <div class="break"></div>
+        <h3 class="section-subheading">{{ with .Site.Params.about.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+        <div class="break"></div>
+        <div class="flexContainerAbout">
+          <div class="flexContainerItem" style="background-color: #BAD7F2">
+            <div class="flexContainerSub">
+              1
+              <p class="subtext">Year in business</p>
+            </div>
+          </div>
+          <div class="flexContainerItem" style="background-color: #BAF2D8">
+            <div class="flexContainerSub">
+              15
+              <p class="subtext">Portfolio Companies</p>
+            </div>
+          </div>
+          <div class="flexContainerItem" style="background-color: #F2BAC9">
+            <div class="flexContainerSub">
+              30+
+              <p class="subtext">Investor Partners</p>
+            </div>
+          </div>
+          <div class="flexContainerItem" style="background-color: #F2E2BA">
+            <div class="flexContainerSub">
+              $150k
+              <p class="subtext">Average Investment</p>
+            </div>
+          </div>
+          <div class="flexContainerItem" style="background-color: #BAD7F2">
+            <div class="flexContainerSub">
+              $2.5MM
+              <p class="subtext">Capital Deployed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+
+          {{ range $i, $e := .Site.Params.about.events }}
+            <li {{ if (not (modBool $i 2)) }}class="timeline-inverted" {{ end }}>
+              <div class="timeline-image">
+                {{ $url := printf "img/about/%s" .img }}
+                <img class="img-circle img-responsive" src="{{ $url | absURL }}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ .date }}</h4>
+                  <h4 class="subheading">{{ .title | markdownify }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">{{ .description  | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+          {{ end }}
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>{{ with .Site.Params.about.endpoint }}{{ . | markdownify }}{{ end }}</h4>
+            </div>
+          </li>
+        </ul>
+      </div>-->
+    <!--</div>-->
+  </div>
+</section>

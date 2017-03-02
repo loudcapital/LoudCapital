@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="index">
+    {{ partial "hero.html" . }}
+
+    <section id="blog">
+      <h2 class="section-heading text-center">Thinking Out Loud</h2>
+      <div class="break"></div>
+      <h3 class="section-subheading text-center">We keep up to date with the latest news in the startup scene, and add our own insight. Here are some of our stories.</h3>
+      <div class="break"></div>
+
+      <div class="container extra-padding">
+        <div class="flexContainer">
+            {{ if gt (len (where .Data.Pages "Section" "blog")) 0 }}
+              {{ range first 2 .Pages.ByPublishDate }}
+                  {{ partial "big-li.html" . }}
+              {{ end }}
+            {{end}}
+        </div>
+        <div class="flexContainer">
+            {{ if gt (len (where .Data.Pages "Section" "blog")) 2 }}
+              {{ range first 3 (after 2 (.Pages.ByPublishDate)) }}
+                  {{ partial "small-li.html" . }}
+              {{ end }}
+            {{end}}
+        </div>
+      </div>
+    </blog>
+    {{ partial "about.html" . }}
+    {{ if .Site.Params.team.enable }}
+      {{ partial "team.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.portfolio.enable }}
+      {{ partial "portfolio.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.contact.enable }}
+      {{ partial "contact.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.footer.enable }}
+      {{ partial "footer.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.portfolio.enable }}
+      {{ partial "modals.html" . }}
+    {{ end }}
+
+    {{ partial "js.html" . }}
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<div class="flex-bitem-large">
+    <div class="bounding-box" style="background-image: url({{ .Params.Img }})"></div>
+    <a class="h3" style="display:block; text-align: start; font-weight: bold; margin-bottom: 0;" target="_blank" href="{{ .Params.Link }}">{{ .Title }}</a>
+    {{ if gt (len (.Description)) 120 }}
+        <span style="display: block; color: black; text-align: start; font-size: 16px;">{{slicestr .Description 0 120}}...</span>
+    {{else}}
+        <span style="display: block; color: black; text-align: start; font-size: 16px;">{{.Description}}...</span>
+    {{end}}
+    <span class="subtext" style="display: block; text-align: start; color: gray;">{{ .Date.Format "Jan 2, 2006" }}</span>
+</div>

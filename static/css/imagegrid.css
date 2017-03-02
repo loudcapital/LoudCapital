@@ -1,0 +1,67 @@
+.img-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start; }
+
+.img-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  transition: all 0.2s;
+  height: 164px;
+  width: 242px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: grayscale(100%);
+  transform: scale(1);
+  cursor: pointer; }
+
+.img-box:hover {
+  transition: all 0.4s;
+  filter: grayscale(0%);
+  transform: scale(1.2); }
+
+.img-container div:nth-child(1) {
+  background-image: url(../img/logos/bylined.png); }
+
+.img-container div:nth-child(2) {
+  background-image: url(../img/logos/carely.png); }
+
+.img-container div:nth-child(3) {
+  background-image: url(../img/logos/circa.png); }
+
+.img-container div:nth-child(4) {
+  background-image: url(../img/logos/college.png); }
+
+.img-container div:nth-child(5) {
+  background-image: url(../img/logos/chicken.png); }
+
+.img-container div:nth-child(6) {
+  background-image: url(../img/logos/elite.png); }
+
+.img-container div:nth-child(7) {
+  background-image: url(../img/logos/cwd.png); }
+
+.img-container div:nth-child(8) {
+  background-image: url(../img/logos/hansya.png); }
+
+.img-container div:nth-child(9) {
+  background-image: url(../img/logos/know.png); }
+
+.img-container div:nth-child(10) {
+  background-image: url(../img/logos/move.png); }
+
+.img-container div:nth-child(11) {
+  background-image: url(../img/logos/nikola.png); }
+
+.img-container div:nth-child(12) {
+  background-image: url(../img/logos/rekovo.png); }
