@@ -332,7 +332,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .intro-logo {
-    max-width: 120px;
+    max-width: 200px;
     margin: auto;
     display: block;
     margin-bottom: 25px;
@@ -350,9 +350,9 @@ fieldset[disabled] .btn-xl.active {
 .intro-text {
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 28px !important;
     text-align: center;
 }
 
@@ -975,12 +975,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #ff5a5f;
+    background: $dOrangeColor;
 }
 
 ::selection {
     text-shadow: none;
-    background: #ff5a5f;
+    background: $dOrangeColor;
 }
 
 img::selection {
@@ -1025,10 +1025,11 @@ img::-moz-selection {
     margin: 6px;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 300px;
+    flex-basis: 200px;
     font-size: 3em;
     min-height: 200px;
-    max-width: 500px !important;
+    max-width: 200px !important;
+    background-color: transparent;
     align-self: center;
     justify-content: center;
     color: black !important;
@@ -1112,7 +1113,7 @@ img::-moz-selection {
     position: relative;
     opacity: 0;
     overflow: hidden;
-    font-size: 1.8em;
+    font-size: 54px;
 }
 
 .fadeInUp {
@@ -1126,7 +1127,7 @@ img::-moz-selection {
 
 .subtext {
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.3em;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -1172,7 +1173,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 340px !important;
+    height: 440px !important;
     position: relative;
 }
 
@@ -1214,7 +1215,7 @@ header {
         opacity: 0;
     }
 }
-$timerCycle: 24;
+$timerCycle: 18;
 
 ul.kf-slider {
     li {
