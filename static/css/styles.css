@@ -24,10 +24,10 @@ body {
   margin-right: 15px; }
 
 .text-muted {
-  color: #777; }
+  color: #f7f7f7; }
 
 .text-primary {
-  color: #ff5a5f; }
+  color: #d85e00; }
 
 p {
   font-size: 14px;
@@ -44,13 +44,13 @@ a.active {
   outline: 0; }
 
 a {
-  color: #ff5a5f; }
+  color: #d85e00; }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #ff5a5f; }
+  color: #d85e00; }
 
 h1,
 h2,
@@ -131,9 +131,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  border-color: #f6bf01;
+  border-color: #ff7d19;
   color: #fff;
-  background-color: #ff5a5f; }
+  background-color: #d85e00; }
 
 .btn-xl:active,
 .btn-xl.active,
@@ -155,11 +155,11 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  border-color: #ff5a5f;
-  background-color: #ff5a5f; }
+  border-color: #d85e00;
+  background-color: #d85e00; }
 
 .btn-xl .badge {
-  color: #ff5a5f;
+  color: #d85e00;
   background-color: #fff; }
 
 .navbar {
@@ -171,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
   font-family: 'Source Sans Pro', sans-serif !important;
   text-transform: uppercase;
-  color: #ff5a5f; }
+  color: #d85e00; }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -234,12 +234,12 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
   color: #fff;
-  background-color: #ff5a5f; }
+  background-color: #d85e00; }
 
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #ff5a5f; }
+  background-color: #d85e00; }
 
 .navbar-default {
   padding: 10px 0;
@@ -275,14 +275,14 @@ fieldset[disabled] .btn-xl.active {
   margin: auto;
   font-family: 'Source Sans Pro', sans-serif !important;
   font-weight: 400 !important;
-  text-transform: uppercase;
   color: #fdfffc;
+  text-transform: none;
   padding-bottom: 10px; }
 
 .intro-text {
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 28px !important;
   text-align: center; }
@@ -714,7 +714,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #ff5a5f; }
+  background-color: #d85e00; }
 
 .btn:focus,
 .btn:active,
@@ -802,7 +802,7 @@ img::-moz-selection {
   background: 0 0; }
 
 .blog-button {
-  color: #ef6f6c !important;
+  color: #d85e00 !important;
   font-size: 2em; }
 
 .scroll-arrow {
@@ -867,7 +867,7 @@ img::-moz-selection {
   background-image: url(...);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: block;
   margin: auto;
   width: 100%;
@@ -955,7 +955,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 440px !important;
+  height: 500px !important;
   position: relative; }
 
 /*
