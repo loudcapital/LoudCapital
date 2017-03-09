@@ -142,5 +142,14 @@ $('.img-box').click(function() {
     case 11:
       window.open('http://rekovo.com', '_blank');
       break;
+    case 12:
+      window.open('http://genetesis.com/', '_blank');
+      break;
+    case 13:
+      window.open('http://www.seamless.ai/', '_blank');
+      break;
+    case 14:
+      window.open('http://aveautomedia.co/', '_blank');
+      break;
   }
 });

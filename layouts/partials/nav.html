@@ -29,15 +29,15 @@
         </li>
       {{ end }}
 
-      {{ if .Site.Params.contact.enable }}
+      {{ if .Site.Params.realestate.enable }}
         <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>
+          <a class="page-scroll" href="{{ .Site.BaseURL }}#realestate">Real Estate</a>
         </li>
       {{ end }}
 
-      {{ if .Site.Params.realestate.enable }}
+      {{ if .Site.Params.contact.enable }}
         <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#realestate">{{ with .Site.Params.navigation.realestate }}{{ . }}{{ end }}</a>
+          <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>
         </li>
       {{ end }}
 

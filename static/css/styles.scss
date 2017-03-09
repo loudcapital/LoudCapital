@@ -12,6 +12,24 @@ $orangeColor: #ff7d19;
 $blueColor: #007b8b;
 $grayColor: #f7f7f7;
 $globalOpacity: 0.8;
+$sansSerifFont: 'Raleway', sans-serif;
+$serifFont: 'Noto Serif', serif;
+
+@font-face {
+    src: url(../fonts/notoserif/NotoSerif-Regular.ttf);
+    font-family: "Noto Serif";
+}
+
+@font-face {
+    src: url(../fonts/raleway/Raleway-Regular.ttf);
+    font-family: "Raleway";
+}
+
+@font-face {
+    src: url(../fonts/raleway/Raleway-SemiBold.ttf);
+    font-family: "Raleway";
+    font-weight: bold;
+}
 
 .inline {
     display: inline-block !important;
@@ -31,7 +49,7 @@ $globalOpacity: 0.8;
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $serifFont;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
@@ -83,7 +101,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-weight: 700;
 }
 
@@ -102,7 +120,7 @@ h6 {
 .btn-primary {
     border-color: #a0c1d1;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-weight: 700;
     color: #fff;
     background-color: #a0c1d1;
@@ -153,7 +171,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #a0c1d1;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -211,7 +229,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: 'Source Sans Pro', sans-serif !important;
+    font-family: $sansSerifFont;
     text-transform: uppercase;
     color: $dOrangeColor;
 }
@@ -270,15 +288,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif !important;
-    font-weight: 600 !important;
+    font-family: $sansSerifFont;
+    font-weight: bold !important;
     letter-spacing: 1px;
     opacity: $globalOpacity;
     color: $whiteColor;
 }
 
 .navbar-nav {
-    //width: 100%;
     white-space: nowrap;
     display: inline-block;
 }
@@ -340,7 +357,7 @@ fieldset[disabled] .btn-xl.active {
 
 .intro-lead-in {
     margin: auto;
-    font-family: 'Source Sans Pro', sans-serif !important;
+    font-family: 'Raleway Light', $sansSerifFont;
     font-weight: 400 !important;
     color: $whiteColor;
     text-transform: none;
@@ -349,7 +366,7 @@ fieldset[disabled] .btn-xl.active {
 
 .intro-text {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $serifFont;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px !important;
@@ -369,14 +386,14 @@ h2.section-heading {
 h3.section-subheading {
     text-transform: none;
     color: #222;
-    font-family: 'Abel', sans-serif;
+    font-family: $sansSerifFont;
     font-size: 28px;
     margin: auto;
     width: 75%;
 }
 
 #about {
-    background-color: $grayColor;
+    background-color: $dOrangeColor;
 }
 
 .about-container {
@@ -402,6 +419,10 @@ h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+
+#portfolio {
+    background-color: $grayColor;
 }
 
 #portfolio .portfolio-item {
@@ -466,7 +487,7 @@ h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-size: 16px;
     font-style: italic;
 }
@@ -810,28 +831,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     font-weight: 700;
     color: #bbb;
 }
@@ -852,7 +873,7 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     line-height: 40px;
 }
 
@@ -860,7 +881,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sansSerifFont;
     line-height: 40px;
 }
 
@@ -919,7 +940,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $serifFont;
     font-size: 16px;
     font-style: italic;
 }
@@ -1012,12 +1033,10 @@ img::-moz-selection {
 
 .flexContainerAbout {
     display: flex;
-    overflow: hidden;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    margin: auto;
+    align-items: center;
+    align-content: center;
 }
 
 .flexContainerItem {
@@ -1027,11 +1046,10 @@ img::-moz-selection {
     flex-shrink: 1;
     flex-basis: 200px;
     font-size: 3em;
-    min-height: 200px;
-    max-width: 200px !important;
+    padding: 1px;
+    max-height: 100px;
+    max-width: 216px !important;
     background-color: transparent;
-    align-self: center;
-    justify-content: center;
     color: black !important;
     text-align: center;
     overflow: hidden;
@@ -1114,19 +1132,18 @@ img::-moz-selection {
     opacity: 0;
     overflow: hidden;
     font-size: 54px;
+    color: white;
 }
 
 .fadeInUp {
-    animation: fadeInUp 2s ease-out forwards;
-    -webkit-animation: fadeInUp 2s;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 0.1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .subtext {
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $serifFont;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
@@ -1158,12 +1175,12 @@ img::-moz-selection {
 
 @keyframes fadeInUp {
     from {
-        top: 150px;
+        top: 100px;
         opacity: 0;
     }
 
     to {
-        top: 20px;
+        top: -4px;
         opacity: 1;
     }
 }

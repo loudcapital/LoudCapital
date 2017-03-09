@@ -19,18 +19,11 @@
 
   {{ "<!-- Custom Fonts -->" | safeHTML }}
   <link href="{{ "font-awesome-v4.7.0/css/font-awesome.min.css" | absURL }}" rel="stylesheet" type="text/css">
-
-  {{ with not .Site.Params.disableFonts }}
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-    <!--Custom-->
-    <link href="//fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Playfair+Display+SC:400,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
-  {{ end }}
+  <link href="{{ "fonts/notoserif/NotoSerif-Regular.ttf" | absURL }}" rel="stylesheet">
+  <link href="{{ "fonts/raleway/Raleway-Medium.ttf" | absURL }}" rel="stylesheet">
+  <link href="{{ "fonts/raleway/Raleway-SemiBold.ttf" | absURL }}" rel="stylesheet">
+  <link href="{{ "fonts/raleway/Raleway-Regular.ttf" | absURL }}" rel="stylesheet">
+  <link href="{{ "fonts/raleway/Raleway-Light.ttf" | absURL }}" rel="stylesheet">
 
   {{ with .Site.Params.favicon }}
     <link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">

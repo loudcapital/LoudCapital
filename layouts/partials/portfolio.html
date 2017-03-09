@@ -1,16 +1,14 @@
 {{ "<!-- Portfolio Grid Section -->" | safeHTML }}
-<section id="portfolio" class="bg-light-gray">
+<section id="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">{{ with .Site.Params.portfolio.title }}{{ . | markdownify }}{{ end }}</h2>
-        <div class="break"></div>
         <h3 class="section-subheading text-muted">Even though we love Columbus and call it our home, we've invested in dozens of companies around the world. Here are just a few that we believe in, have invested, and are part of the LOUD family.</h3>
         <div class="break"></div>
       </div>
     </div>
     <div class="img-container">
-      {{ range $i, $sequence := (seq 12) }}
+      {{ range $i, $sequence := (seq 15) }}
       <div class="img-box">
       </div>
       {{end}}
