@@ -7,14 +7,14 @@
                 <div class="break"></div>
                 <div class="flexContainer">
                     {{ if gt (len (where .Data.Pages "Section" "blog")) 0 }}
-                        {{ range first 2 .Pages.ByPublishDate }}
+                        {{ range first 2 (where .Pages "Section" "blog") }}
                             {{ partial "big-li.html" . }}
                         {{ end }}
                     {{end}}
                 </div>
                 <div class="flexContainer">
                     {{ if gt (len (where .Data.Pages "Section" "blog")) 2 }}
-                        {{ range first 3 (after 2 (.Pages.ByPublishDate)) }}
+                        {{ range first 3 (after 2 (where .Pages "Section" "blog")) }}
                             {{ partial "small-li.html" . }}
                         {{ end }}
                     {{end}}
