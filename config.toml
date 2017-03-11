@@ -1,4 +1,4 @@
-baseurl = "https://zeraceee.github.io/loudcapital/"
+baseurl = "https://zeraceee.github.io/"
 googleAnalytics = ""
 languageCode = "en-us"
 publishDir = "public"
