@@ -1070,7 +1070,7 @@ img::-moz-selection {
     flex-grow: 1;
     flex-shrink: 1;
     font-size: 3em;
-    width: calc(100% * 0.33) !important;
+    max-width: calc(100% * 0.33) !important;
     color: black !important;
     text-align: center;
 }
