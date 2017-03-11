@@ -637,10 +637,7 @@ aside .heading {
   margin-bottom: -40px; }
 
 section#contact {
-  background-color: #222;
-  background-image: url(../img/map-image.png);
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: #373a3f; }
 
 section#contact .section-heading {
   color: #fff; }

@@ -6,6 +6,14 @@
     align-content: flex-start;
 }
 
+.rs-img-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
 .img-box {
     display: -webkit-box;
     display: -moz-box;
@@ -27,7 +35,34 @@
     cursor: pointer;
 }
 
+.rs-img-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    transition: all 0.2s;
+    height: 164px;
+    width: 242px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(100%);
+    transform: scale(1);
+    cursor: pointer;
+}
+
 .img-box:hover {
+    transition: all 0.4s;
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+.rs-img-box:hover {
     transition: all 0.4s;
     filter: grayscale(0%);
     transform: scale(1.2);
@@ -92,5 +127,35 @@
 
     div:nth-child(15) {
         background-image: url(../img/logos/ave.png);
+    }
+}
+
+.rs-img-container {
+    div:nth-child(1) {
+        background-image: url(../img/rs-logos/baymont.png);
+    }
+
+    div:nth-child(2) {
+        background-image: url(../img/rs-logos/best.png);
+    }
+
+    div:nth-child(3) {
+        background-image: url(../img/rs-logos/comfort.png);
+    }
+
+    div:nth-child(4) {
+        background-image: url(../img/rs-logos/holiday.png);
+    }
+
+    div:nth-child(5) {
+        background-image: url(../img/rs-logos/howard.png);
+    }
+
+    div:nth-child(6) {
+        background-image: url(../img/rs-logos/quality.png);
+    }
+
+    div:nth-child(7) {
+        background-image: url(../img/rs-logos/ramada.png);
     }
 }

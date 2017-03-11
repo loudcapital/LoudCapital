@@ -1,63 +1,35 @@
 <nav class="nav-parent navbar navbar-default navbar-fixed-top ">
   <div class="container nav-child">
     <ul class="nav navbar-nav">
-      {{ range .Site.Menus.prepend }}
-        <li class="inline">
-          <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
-        </li>
-      {{ end }}
-
-        <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#blog">Blog</a>
-        </li>
-
-      {{ if .Site.Params.about.enable }}
-        <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.navigation.about }}{{ . }}{{ end }}</a>
-        </li>
-      {{ end }}
-
-      {{ if .Site.Params.team.enable }}
-        <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#team">{{ with .Site.Params.navigation.team }}{{ . }}{{ end }}</a>
-        </li>
-      {{ end }}
-
-      {{ if .Site.Params.portfolio.enable }}
-        <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
-        </li>
-      {{ end }}
-
-      {{ if .Site.Params.realestate.enable }}
-        <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#realestate">Real Estate</a>
-        </li>
-      {{ end }}
-
-      {{ if .Site.Params.contact.enable }}
-        <li class="inline">
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>
-        </li>
-      {{ end }}
-
-      {{ range .Site.Menus.postpend }}
-        <li class="inline">
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-      {{ end }}
-      </ul>
-      <ul class="nav navbar-nav media-icons">
-        <li class="social-media inline">
-          <a href="https://twitter.com/LOUDCapital" target="_blank"><i class="fa fa-twitter fa-fw fa-2x page-scroll"></i></a>
-        </li>
-        <li class="social-media inline">
-          <a href="https://www.facebook.com/LOUDCap" target="_blank"><i class="fa fa-facebook fa-fw fa-2x page-scroll"></i></a>
-        </li>
-        <li class="social-media inline">
-          <a class="ip" href="https://www.instagram.com/loudcapital/" target="_blank"><i class="fa fa-instagram fa-fw fa-2x page-scroll"></i></a>
-        </li>
-      </ul>
-    </div>
+      <li class="inline">
+        <a class="page-scroll" href="{{ .Site.BaseURL }}#blog">Blog</a>
+      </li>
+      <li class="inline">
+        <a class="page-scroll" href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.navigation.about }}{{ . }}{{ end }}</a>
+      </li>
+      <li class="inline">
+        <a class="page-scroll" href="{{ .Site.BaseURL }}#team">{{ with .Site.Params.navigation.team }}{{ . }}{{ end }}</a>
+      </li>
+      <li class="inline">
+        <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
+      </li>
+      <li class="inline">
+        <a class="page-scroll" href="{{ .Site.BaseURL }}/realestate">Real Estate</a>
+      </li>
+      <li class="inline">
+        <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav media-icons">
+      <li class="social-media inline">
+        <a href="https://twitter.com/LOUDCapital" target="_blank"><i class="fa fa-twitter fa-fw fa-2x page-scroll"></i></a>
+      </li>
+      <li class="social-media inline">
+        <a href="https://www.facebook.com/LOUDCap" target="_blank"><i class="fa fa-facebook fa-fw fa-2x page-scroll"></i></a>
+      </li>
+      <li class="social-media inline">
+        <a class="ip" href="https://www.instagram.com/loudcapital/" target="_blank"><i class="fa fa-instagram fa-fw fa-2x page-scroll"></i></a>
+      </li>
+    </ul>
   </div>
 </nav>

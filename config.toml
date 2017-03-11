@@ -3,6 +3,7 @@ googleAnalytics = ""
 languageCode = "en-us"
 publishDir = "public"
 title = "Loud Capital"
+canonifyURLs = true
 [params]
 custom_css = []
 custom_js = []
