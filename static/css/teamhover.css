@@ -29,18 +29,34 @@
 
 .headerContainer {
   float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 40px; }
 
 .mediaContainer {
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 40px; }
 
 .bottom-bar {
@@ -49,8 +65,10 @@
   background: #fdfffc;
   color: #fdfffc;
   position: static;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  transform: translateY(-80px);
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
   opacity: 0; }
 
 .view p {
@@ -67,25 +85,32 @@
 
 .view-first .mask {
   opacity: 0;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
 .view-first:hover .mask {
   opacity: 1;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
 .view-first:hover .wrap.active .content {
   opacity: 1;
   z-index: 2;
+  -webkit-transition: all 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: all 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 .view-first:hover .bottom-bar {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   opacity: 1; }
 
 .view-first:hover .content {
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   opacity: 0.8; }
 
 .content {
@@ -99,4 +124,7 @@
   left: 0;
   padding: 10px;
   display: block;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s; }
+
+/*# sourceMappingURL=teamhover.css.map */

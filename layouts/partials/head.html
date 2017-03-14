@@ -19,11 +19,11 @@
 
   {{ "<!-- Custom Fonts -->" | safeHTML }}
   <link href="{{ "font-awesome-v4.7.0/css/font-awesome.min.css" | absURL }}" rel="stylesheet" type="text/css">
-  <link href="{{ "fonts/notoserif/NotoSerif-Regular.ttf" | absURL }}" rel="stylesheet">
-  <link href="{{ "fonts/raleway/Raleway-Medium.ttf" | absURL }}" rel="stylesheet">
-  <link href="{{ "fonts/raleway/Raleway-SemiBold.ttf" | absURL }}" rel="stylesheet">
-  <link href="{{ "fonts/raleway/Raleway-Regular.ttf" | absURL }}" rel="stylesheet">
-  <link href="{{ "fonts/raleway/Raleway-Light.ttf" | absURL }}" rel="stylesheet">
+  <link href="{{ "fonts/notoserif/NotoSerif-Regular.ttf" | absURL }}" rel="application/x-font-ttf">
+  <link href="{{ "fonts/raleway/Raleway-Medium.ttf" | absURL }}" rel="application/x-font-ttf">
+  <link href="{{ "fonts/raleway/Raleway-SemiBold.ttf" | absURL }}" rel="application/x-font-ttf">
+  <link href="{{ "fonts/raleway/Raleway-Regular.ttf" | absURL }}" rel="application/x-font-ttf">
+  <link href="{{ "fonts/raleway/Raleway-Light.ttf" | absURL }}" rel="application/x-font-ttf">
 
   {{ with .Site.Params.favicon }}
     <link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">
