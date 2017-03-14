@@ -24,10 +24,7 @@ $(document).ready(function(){
       $('.navbar-default').removeClass('navbar-shrink');
     }
   });
-});
 
-$(document).ready(function(){
-  var maxOffset = $('header').outerHeight() - $('.nav-parent').outerHeight();
   if ($(window).scrollTop() >= maxOffset) {
     $('.navbar-default').addClass('navbar-shrink');
   }

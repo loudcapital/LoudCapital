@@ -30,7 +30,8 @@
   background-position: center center;
   filter: grayscale(100%);
   transform: scale(1);
-  cursor: pointer; }
+  cursor: pointer;
+  border: 0.8em solid transparent; }
 
 .rs-img-box {
   display: -webkit-box;
@@ -50,7 +51,8 @@
   background-position: center center;
   filter: grayscale(100%);
   transform: scale(1);
-  cursor: pointer; }
+  cursor: pointer;
+  border: 0.8em solid transparent; }
 
 .img-box:hover {
   transition: all 0.4s;
