@@ -1,9 +1,9 @@
 +++
-date = "2017-03-09T10:09:16+00:00"
-description = "By Navin Goyal - I’ve found myself comparing the structured medical field to the unstructured entrepreneurial space. It is not only a comparison that runs through my head, but it is also the life I have been living for the past few years. My life experiences are rooted in these two worlds, and give me a unique vantage point that allows me to compare the two."
-img = "https://cdn-images-1.medium.com/max/1600/1*cf-BNdsz3rjV6xNy0LYT6A.jpeg"
+date = "2017-03-11T07:50:24+00:00"
+description = "I’ve found myself comparing the structured medical field to the unstructured entrepreneurial space. It is not only a comparison that runs through my head, but it is also the life I have been living for the past few years. My life experiences are rooted in these two worlds, and give me a unique vantage point that allows me to compare the two."
+img = "https://cdn-images-1.medium.com/max/2000/1*cf-BNdsz3rjV6xNy0LYT6A.jpeg"
 link = "https://medium.com/@ngoyal1/intention-entrepreneurship-81ebb048f1c8"
-title = "Intention & Entrepreneurship"
+title = "Intention and Entrepreneurship"
 
 +++
 I’ve found myself comparing the structured medical field to the unstructured entrepreneurial space. It is not only a comparison that runs through my head, but it is also the life I have been living for the past few years. My life experiences are rooted in these two worlds, and give me a unique vantage point that allows me to compare the two.
@@ -22,14 +22,10 @@ What I absolutely love about entrepreneurship is the opportunity for the creativ
 
 In getting to the point, I have figured out that to continue to perfect the world of entrepreneurship, we must first “do no harm.” We should align our goals with the people/team around us, we should be extremely creative and push innovative pathways, and we shouldn’t let barriers that others have put up, stop us. We should also be respectful and professional to our partners, clients, and anyone we work with. We should have a variety of goals that are ambitious while also benefiting customers and society. Although entrepreneurs come in all shapes and sizes, following a couple of those guidelines while white boarding, or having “thinking out loud” sessions, can provide tremendous value to our society. I do know this. I take these guidelines that the medical field has instilled in me and apply it to the beautifully creative entrepreneurial ecosystem. I’m personally just getting started, but I hope that others can consider this practice as well. It’s another day, another opportunity, and another chance to take entrepreneurship and amplify it…
 
-Cheers to the creatives
+**Cheers to the creatives**
 
-Cheers to the disciplined
+**Cheers to the disciplined**
 
-Cheers to encouraging others to take that first step
+**Cheers to encouraging others to take that first step**
 
-Cheers to Entrepreneurship
-
-LOUD Capital. Entrepreneurship. Amplified.
-
-![](/uploads/2017/03/10/LOUDCapitalTeam.png)
+**Cheers to Entrepreneurship**
