@@ -14,22 +14,22 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="name" required="required" type="text" name="name" placeholder="*Name" data-validation-error-msg="Invalid input!">
+                  <input class="form-control" id="name" required type="text" name="name" placeholder="*Name" data-validation-error-msg="Invalid input!">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" required="required" type="email" name="email" placeholder="*Email" data-validation-error-msg="Invalid input!">
+                  <input class="form-control" id="email" required type="email" name="email" placeholder="*Email" data-validation-error-msg="Invalid input!">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" required="required" type="number" name="phone" placeholder="*Phone Number" data-validation-error-msg="Invalid input!">
+                  <input class="form-control" id="phone" required type="number" name="phone" placeholder="*Phone Number" data-validation-error-msg="Invalid input!">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="message" required="required" name="message" placeholder="*Message" data-validation-error-msg="Invalid input!"></textarea>
+                  <textarea class="form-control" id="message" required name="message" placeholder="*Message" data-validation-error-msg="Invalid input!"></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
@@ -88,33 +88,11 @@
 
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
-                <div class="text-success" id="success" style="display:none;">
-                  {{ with .Site.Params.contact.thanks }}
-                    {{ . | markdownify }}
-                  {{ else }}
-                    Thank you for contacting us.
-                  {{ end }}
-                </div>
-                <div class="text-danger" id="error" style="display:none;">
-                  {{ with .Site.Params.contact.error }}
-                    {{ . | markdownify }}
-                  {{ else }}
-                    Message could not be send. Please contact us at {{ (or .Site.Params.contact.email .Site.Params.email) }} instead.
-                  {{ end }}
-                </div><br />
-                <button type="submit" value="Submit" class="btn btn-xl">Submit</button>
+                <button type="submit" value="submit" class="btn btn-xl">Submit</button>
+                <div class="text-success" id="success" style="display:none;"><br>Thank you for contacting us. Your message has been sent.</div>
+                <div class="text-danger" id="error" style="display:none;"><br>Your message could not be sent. Please try again.</div>
               </div>
             </div>
-            
-            {{ range .Site.Params.contact.form.hidden }}
-              {{ if eq .name "site" }}
-                <input type="hidden" name="{{ .name }}" value="{{ $.Permalink }}"/>
-              {{ else if eq .name "page" }}
-                <input type="hidden" name="{{ .name }}" value="{{ $.URL }}"/>
-              {{ else }}
-                <input type="hidden" name="{{ .name }}" value="{{ .value }}"/>
-              {{ end }}
-            {{ end }}
           </fieldset>
         </form>
       </div>

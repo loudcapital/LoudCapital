@@ -44,16 +44,13 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // Async contact form
-$('form[id=contactForm]').submit(function(){
-  $.post($(this).attr('action'), $(this).serialize(), function(res){
-    $('form[id=contactForm] #success').hide();
-    $('form[id=contactForm] #error').hide();
-    if (res.code == "200")
-      $('form[id=contactForm] #success').show();
-    }).fail(function(){
-    $('form[id=contactForm] #success').hide();
-    $('form[id=contactForm] #error').hide();
-    $('form[id=contactForm] #error').show();
+$('#contactForm').submit(function() {
+  $('#contactForm #success').hide();
+  $('#contactForm #error').hide();
+  $.post($(this).attr('action'), $(this).serialize(), function(res) {
+    $('#contactForm #success').show();
+  }).error(function () {
+    $('#contactForm #error').show();
   });
   return false;
 });

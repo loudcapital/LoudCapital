@@ -271,7 +271,6 @@ fieldset[disabled] .btn-xl.active {
   border-radius: 3px; }
 
 .navbar-default.navbar-shrink {
-  padding: 0 !important;
   background-color: #222;
   position: fixed;
   top: 0; }
@@ -322,10 +321,8 @@ h3.section-subheading {
 
 .about-container {
   display: -webkit-box;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-lines: multiple;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -0.05rem;
@@ -513,30 +510,6 @@ section#contact .form-control:focus {
   border-color: #ff5a5f;
   box-shadow: none; }
 
-section#contact::-webkit-input-placeholder {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #bbb; }
-
-section#contact:-moz-placeholder {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #bbb; }
-
-section#contact::-moz-placeholder {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #bbb; }
-
-section#contact:-ms-input-placeholder {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #bbb; }
-
 section#contact .text-danger {
   color: #e74c3c; }
 
@@ -636,7 +609,7 @@ ul.social-buttons li a:active {
   margin-left: 35px;
   background-color: #222;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
+          transform: rotate(45deg); }
 
 .portfolio-modal .close-modal .lr .rl {
   z-index: 1052;
@@ -644,7 +617,7 @@ ul.social-buttons li a:active {
   height: 75px;
   background-color: #222;
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
+          transform: rotate(90deg); }
 
 .portfolio-modal .modal-backdrop {
   display: none;
@@ -833,10 +806,6 @@ img::-moz-selection {
   width: 100%;
   padding: 0; }
 
-@media (min-width: 768px) {
-  .nav-parent {
-    width: 100vw !important; } }
-
 .flexContainerSub {
   position: relative;
   opacity: 0;
@@ -845,16 +814,16 @@ img::-moz-selection {
   color: white; }
 
 .fadeInUp {
-  -webkit-animation: fadeInUp 1s ease-in-out forwards;
-          animation: fadeInUp 1s ease-in-out forwards;
+  -webkit-animation: fadeInUp 0.6s ease-in-out forwards;
+          animation: fadeInUp 0.6s ease-in-out forwards;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
+          animation-fill-mode: forwards; }
 
 .subtext {
   font-family: "Noto Serif", serif;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -870,6 +839,9 @@ img::-moz-selection {
   width: 74vw !important;
   margin: auto;
   position: relative; }
+
+.nav-original {
+  padding-left: 10px; }
 
 .fa:hover {
   color: #ff7d19; }
