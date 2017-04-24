@@ -1,5 +1,5 @@
 +++
-date = "2017-03-11T07:46:38+00:00"
+date = "2017-03-11T07:46:38Z"
 description = " In order for brands to monetize UGC in the future, and use their UGC in a meaningful way, it can't be earned, it must be owned."
 img = "https://cdn-images-1.medium.com/max/2000/1*M7Aq_DpDtKYIiJB62XuAdw.jpeg"
 link = "https://medium.com/p/1d1a4e66fb9e/edit"
