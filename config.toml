@@ -1,4 +1,4 @@
-baseurl = "https://loudcapital.github.io/"
+baseurl = "https://loudcapital.com/"
 googleAnalytics = ""
 languageCode = "en-us"
 publishDir = "public"
@@ -7,7 +7,7 @@ canonifyURLs = true
 [params]
 custom_css = []
 custom_js = []
-description = "Your description"
+description = "LOUD Capital is an entrepreneurial collective that empowers entrepreneurs and investors with capital, talent, and connections necessary to amplify success."
 disableFonts = false
 favicon = "favicon.ico"
 name = "Michael Gerace"

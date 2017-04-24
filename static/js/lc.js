@@ -107,7 +107,7 @@ $('.img-box').click(function() {
       window.open('http://care.ly', '_blank');
       break;
     case 2:
-      window.open('http://circablack.com', '_blank');
+      window.open('http://www.hyperionmotors.com/', '_blank');
       break;
     case 3:
       window.open('http://mycollegeease.com', '_blank');
@@ -144,6 +144,9 @@ $('.img-box').click(function() {
       break;
     case 14:
       window.open('http://aveautomedia.co/', '_blank');
+      break;
+    case 15:
+      window.open('http://circablack.com', '_blank');
       break;
   }
 });
